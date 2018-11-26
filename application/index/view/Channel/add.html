@@ -1,0 +1,58 @@
+{extend name="./base" /}
+{block name="menu"}
+{/block}
+{block name="main"}
+<div class="main-panel">
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <form id="LoginValidation" action="" method="">
+                            <div class="content">
+                                <h4 class="title">渠道添加</h4>
+                                <div class="form-group label-floating">
+                                    <label class="control-label">用户名称
+                                        <star>*</star>
+                                    </label>
+                                    <input class="form-control" name="username" type="text"  required="true" />
+                                </div>
+                              <div class="form-group label-floating">
+                                    <label class="control-label">密码
+                                        <star>*</star>
+                                    </label>
+                                    <input class="form-control" name="password" type="password" required="true" />
+                                </div>
+                                <div class="form-group label-floating">
+                                    <label class="control-label">确认密码
+                                        <star>*</star>
+                                    </label>
+                                    <input class="form-control" name="surepassword" type="password" required="true" />
+                                </div>
+                                <div class="form-group label-floating">
+                                    <label class="control-label">渠道名称
+                                        <star>*</star>
+                                    </label>
+                                    <input class="form-control" name="channelname" type="text" required="true" />
+                                </div>
+                                <div class="form-group label-floating">
+                                    <label class="control-label">渠道分成
+                                        <star>*</star>
+                                    </label>
+                                    <input class="form-control" name="channeldivide" type="text" required="true" />
+                                </div>
+                                <div class="category form-category">
+                                    <star>*</star> 需要填写字段</div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-rose btn-fill btn-wd">确认</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{/block}
